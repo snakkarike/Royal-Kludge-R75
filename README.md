@@ -11,10 +11,8 @@ Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
 > This is a custom firmware that could break your keyboard.
 >
 > 🛑 **Use at your own risk!** 🛑
-> 
-> I have tried my best to make sure everything works, but I may miss something.
 >
-> It works for my keyboard, but there may be revisions in the future that are not compatible. Use at your own risk!
+> Both the PID works for my keyboard but there may be revisions in the future. Use at your own risk!
 
 # 🥳Thanks!
 Thanks to [@irfan](https://github.com/irfanjmdn/), [sdk66](https://github.com/sdk66/) and [@iamdanielv](https://github.com/iamdanielv) for their work on R65.
