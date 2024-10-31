@@ -43,7 +43,7 @@ qmk should generate a new bin file: `rk_r75_custom_custom.hex` in your qmk_firmw
 
 ## 🌐 Using via
 
-In order to use via, you may have to upload the [json specification](extras/rk_r65_via.json), it can be found under the `extras` folder.
+In order to use via, you may have to upload the [json specification](Custom%20VIA%20Layout.json), it can be found under the `extras` folder.
 
 ## 🥾 Bootloader and Clearing eeprom
 
