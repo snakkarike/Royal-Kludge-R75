@@ -22,7 +22,7 @@ I use `9 layers` for my changes, `keyboard.json` specifies that in the following
 
 ```json
 "dynamic_keymap": {
-    "layer_count": 6
+    "layer_count": 9
 }
 ```
 
@@ -31,12 +31,12 @@ I use `9 layers` for my changes, `keyboard.json` specifies that in the following
 You can now use QMK builder with the following command:
 
 ```shell
-qmk compile -j 0 -kb rk/r65/iamdanielv -km iamdanielv
+qmk compile -j 0 -kb rk/r75/custom -km custom
 ```
 
 > the `-j 0` uses parallel build to speed it up a bit
 
-qmk should generate a new bin file: `rk_r65_iamdanielv_iamdanielv.bin` in your qmk_firmware folder.
+qmk should generate a new bin file: `rk_r75_custom_custom.hex` in your qmk_firmware folder.
 
 ## 🌐 Using via
 
