@@ -1,9 +1,10 @@
 # RK ROYAL KLUDGE R75 - Custom QMK firmware (WIP)
 Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
 
-| Branch        | Features              | HID                                             | PID                                                                                   |
+| Firmware        | Features              | HID                                             | PID                                                                                   |
 |---------------|-----------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Main   | QMK, VIA      | 342D           | E484                         |
+| Custom Firmware   | QMK, VIA      | 342D           | E484                         |
+| Original Firmware   | QMK, VIA      | 342D           | E488                         |
 
 ## ⚠️ Disclaimer
 > [!CAUTION]
