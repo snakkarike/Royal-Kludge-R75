@@ -48,11 +48,5 @@ To prevent accidental KB Bootloader triggers, I have it hidden under a layer.
 
 - To reboot and `enter bootloader mode`:
   - hold `Fn`, then hold `RShift`, then triple tap the `q` key
-  - OR hold `RAlt`, then hold `RShift`, then triple tap the `q` key
-  - OR hold `CAPS Lock`, then hold `RShift`, then triple tap the `q` key
-  - OR hold `RAlt`, then double tap `PgDn`, then triple tap the `q` key
 - To `clear eeprom`:
   - hold `Fn`, then hold `RShift`, then triple tap the `z` key
-  - OR hold `RAlt`, then hold `RShift`, then triple tap the `z` key
-  - OR hold `CAPS Lock`, then hold `RShift`, then triple tap the `z` key
-  - OR hold `Ralt`, then double tap `PgDn`, then triple tap the `q` key
