@@ -53,3 +53,18 @@ To prevent accidental KB Bootloader triggers, I have it hidden under a layer.
   - hold `Fn`, then hold `RShift`, then triple tap the `q` key
 - To `clear eeprom`:
   - hold `Fn`, then hold `RShift`, then triple tap the `z` key
+
+## ⭐ Features
+
+To use the features i use `Layer 1`
+- hold `Fn`
+
+While on `Layer 1`, you have the following available:
+
+-  `Right Alt` + `Q` - triple tap `Q` to `enter bootloader mode`
+- `Right Alt` + `Z` - triple tap `Z` to `clear eeprom`
+
+- `N` - Toggle NKRO
+- `Right Shift` + `T` - Toggle SOCD
+- `Right Shift` + `F3` - Toggle Numpad Layer
+- `Right Shift` + `F1,F2,F3,F4,F5,F6,F7,F8` - Toggle Layers 0,2,3,4,5,6,7,8
