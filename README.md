@@ -81,4 +81,4 @@ While on `Layer 1`, you have the following available:
 
 ## ⭐ VIA + SignalRGB
 
--  After flashing the firmware, copy [`SignalRGB-for-RK-R75.js`](SignalRGB%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
+-  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
