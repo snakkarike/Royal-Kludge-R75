@@ -5,6 +5,7 @@ Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
 |---------------|-----------------------|
 | Custom Firmware   | QMK, VIA      | 
 | Original Firmware   | QMK, VIA      | 
+| VIA Plus OpenRGB Firmware   | QMK, VIA, OpenRGB     | 
 
 ## ⚠️ Disclaimer
 > [!CAUTION]
@@ -68,3 +69,11 @@ While on `Layer 1`, you have the following available:
 - `Right Shift` + `T` - Toggle SOCD
 - `Right Shift` + `F3` - Toggle Numpad Layer
 - `Right Shift` + `F1,F2,F3,F4,F5,F6,F7,F8` - Toggle Layers 0,2,3,4,5,6,7,8
+
+## ⭐ VIA + OpenRGB
+To use the features i use `Layer 1`
+- hold `Fn`
+
+While on `Layer 1`, you have the following available:
+
+-  `Q` - tap once to switch to VIA mode or switch back to OpenRGB mode.
