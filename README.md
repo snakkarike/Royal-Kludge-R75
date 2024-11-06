@@ -78,3 +78,7 @@ To use the features i use `Layer 1`
 While on `Layer 1`, you have the following available:
 
 -  `Q` - tap once to switch to VIA mode or switch back to OpenRGB mode.
+
+## ⭐ VIA + SignalRGB
+
+-  After flashing the firmware, copy [`SignalRGB-for-RK-R75.js`](SignalRGB%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
