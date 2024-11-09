@@ -1,5 +1,5 @@
 {
-  "name": "R75",
+  "name": "Royal Kludge R75",
   "vendorId": "0x342d",
   "productId": "0xe484",
   "keycodes": ["qmk_lighting"],
