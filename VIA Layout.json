@@ -1,7 +1,7 @@
 {
   "name": "R75",
   "vendorId": "0x342d",
-  "productId": "0xe488",
+  "productId": "0xe484",
   "keycodes": ["qmk_lighting"],
   "menus": [
     {
