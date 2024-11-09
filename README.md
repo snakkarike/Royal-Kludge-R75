@@ -7,6 +7,7 @@ Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
 | Original Firmware   | QMK, VIA      | 
 | VIA Plus OpenRGB Firmware   | QMK, VIA, OpenRGB     | 
 | VIA Plus SignalRGB Firmware   | QMK, VIA, SignalRGB     | 
+| VIA Plus SignalRGB & OpenRGB Firmware  | QMK, VIA, SignalRGB, OpenRGB     | 
 
 ## ⚠️ Disclaimer
 > [!CAUTION]
