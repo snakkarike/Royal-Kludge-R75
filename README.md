@@ -3,8 +3,8 @@ Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
 
 | Firmware        | Features              |
 |---------------|-----------------------|
-| Custom Firmware   | QMK, VIA      | 
 | Original Firmware   | QMK, VIA      | 
+| Custom Firmware   | QMK, VIA      | 
 | VIA Plus OpenRGB Firmware   | QMK, VIA, OpenRGB     | 
 | VIA Plus SignalRGB Firmware   | QMK, VIA, SignalRGB     | 
 | VIA Plus SignalRGB & OpenRGB Firmware  | QMK, VIA, SignalRGB, OpenRGB     | 
@@ -24,11 +24,11 @@ Thanks to [@irfan](https://github.com/irfanjmdn/), [sdk66](https://github.com/sd
 
 I've updated the **default** keymap to work with the current source. It can be used as a starting point for customization.
 
-I use `9 layers` for my changes, `keyboard.json` specifies that in the following section:
+I use `6 layers` for my changes, `keyboard.json` specifies that in the following section:
 
 ```json
 "dynamic_keymap": {
-    "layer_count": 9
+    "layer_count": 6
 }
 ```
 
