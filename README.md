@@ -64,7 +64,7 @@ To use the features i use `Layer 1`
 
 While on `Layer 1`, you have the following available:
 
--  `Right Alt` + `Q` - triple tap `Q` to `enter bootloader mode`
+- `Right Alt` + `Q` - triple tap `Q` to `enter bootloader mode`
 - `Right Alt` + `Z` - triple tap `Z` to `clear eeprom`
 
 - `N` - Toggle NKRO
@@ -81,5 +81,23 @@ While on `Layer 1`, you have the following available:
 -  `Q` - tap once to switch to VIA mode or switch back to OpenRGB mode.
 
 ## ⭐ VIA + SignalRGB
+
+-  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
+
+-  ## ⭐ VIA + SignalRGB + OpenRGB
+
+To use the features i use `Layer 1`
+- hold `Fn`
+
+While on `Layer 1`, you have the following available:
+
+- `Right Shift` + `O` - Toggle OpenRGB
+- `Right Shift` + `S` - Toggle SignalRGB
+
+- `Right Shift` + `Q` - triple tap `Q` to `enter bootloader mode`
+- `Right Shift` + `Z` - triple tap `Z` to `clear eeprom`
+
+- `Right Shift` + `N` - Toggle NKRO
+- `Right Shift` + `T` - Toggle SOCD
 
 -  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
