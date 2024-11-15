@@ -72,6 +72,7 @@ While on `Layer 1`, you have the following available:
 - `Right Shift` + `F3` - Toggle Numpad Layer
 - `Right Shift` + `F1,F2,F3,F4,F5,F6,F7,F8` - Toggle Layers 0,2,3,4,5,6,7,8
 
+
 ## ⭐ VIA + OpenRGB
 To use the features i use `Layer 1`
 - hold `Fn`
@@ -80,11 +81,13 @@ While on `Layer 1`, you have the following available:
 
 -  `Q` - tap once to switch to VIA mode or switch back to OpenRGB mode.
 
+
 ## ⭐ VIA + SignalRGB
 
 -  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
 
--  ## ⭐ VIA + SignalRGB + OpenRGB
+
+## ⭐ VIA + SignalRGB + OpenRGB
 
 To use the features i use `Layer 1`
 - hold `Fn`
