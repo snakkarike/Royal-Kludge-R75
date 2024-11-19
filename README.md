@@ -99,6 +99,7 @@ While on `Layer 1`, you have the following available:
 
 - `Right Shift` + `Q` - triple tap `Q` to `enter bootloader mode`
 - `Right Shift` + `Z` - triple tap `Z` to `clear eeprom`
+- `Right Shift` + `<>` - triple tap `<>` to `clear eeprom` FOR ISO LAYOUT
 
 - `Right Shift` + `N` - Toggle NKRO
 - `Right Shift` + `T` - Toggle SOCD
