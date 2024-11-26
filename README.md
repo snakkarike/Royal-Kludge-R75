@@ -107,6 +107,7 @@ While on `Layer 1`, you have the following available:
 -  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
 
 ## Note
+> [!CAUTION]
 > To check in which mode the keyboard is currently in.
 >
 > Open [VIA](https://usevia.app/)  and try to connect the keyboard.
