@@ -105,3 +105,14 @@ While on `Layer 1`, you have the following available:
 - `Right Shift` + `T` - Toggle SOCD
 
 -  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
+
+## Note
+> To check in which mode the keyboard is currently in.
+>
+> Open [VIA](https://usevia.app/)  and try to connect the keyboard.
+> In the settings tab enable show diagnostic information.
+> If the VIA Firmware Protocol Version Mention
+
+- `12` It is in VIA Mode
+- `2816` It is in OpenRGB Mode
+- `Failed to connect` It is in SignalRGB Mode
