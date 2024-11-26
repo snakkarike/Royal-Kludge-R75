@@ -1,13 +1,15 @@
 # RK ROYAL KLUDGE R75 - Custom QMK firmware (WIP)
 Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
 
-| Firmware        | Features              |
-|---------------|-----------------------|
-| Original Firmware   | QMK, VIA      | 
-| Custom Firmware   | QMK, VIA      | 
-| VIA Plus OpenRGB Firmware   | QMK, VIA, OpenRGB     | 
-| VIA Plus SignalRGB Firmware   | QMK, VIA, SignalRGB     | 
-| VIA Plus OpenRGB & SignalRGB Firmware   | QMK, VIA, OpenRGB, SignalRGB     | 
+| Firmware        | Features              | USB ID              |
+|---------------|-----------------------|-----------------------|
+| Original Firmware   | QMK, VIA      | VID:342d PID:e484| 
+| Custom Firmware   | QMK, VIA      | | 
+| VIA Plus OpenRGB Firmware   | QMK, VIA, OpenRGB     |  | 
+| VIA Plus SignalRGB Firmware   | QMK, VIA, SignalRGB     |  | 
+| VIA Plus OpenRGB & SignalRGB Firmware   | QMK, VIA, OpenRGB, SignalRGB     |  | 
+|   |   |  | 
+| VIA Plus OpenRGB & SignalRGB Firmware-ISO   | QMK, VIA, OpenRGB, SignalRGB     | VID:342d PID:e483| 
 
 ## ⚠️ Disclaimer
 > [!CAUTION]
