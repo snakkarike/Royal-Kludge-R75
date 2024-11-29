@@ -37,7 +37,7 @@ I use `6 layers` for my changes, `keyboard.json` specifies that in the following
 You can now use QMK builder with the following command:
 
 ```shell
-qmk compile -j 0 -kb rk/r75/custom -km custom
+qmk compile -j 0 -kb rk/r75/custom -km via
 ```
 
 > the `-j 0` uses parallel build to speed it up a bit
