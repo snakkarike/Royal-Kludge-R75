@@ -1,0 +1,11 @@
+ENCODER_MAP_ENABLE = yes
+VIA_ENABLE = yes
+TAP_DANCE_ENABLE = yes
+LTO_ENABLE = yes
+RAW_ENABLE = yes
+RGB_MATRIX_KEYREACTIVE_ENABLED = yes
+SRC += features/indicator_queue.c
+SRC += features/tap_hold.c
+SRC += features/indicators.c
+SRC += features/rgb_keys.c
+SRC += features/socd_cleaner.c

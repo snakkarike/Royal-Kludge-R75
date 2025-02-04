@@ -99,7 +99,7 @@ void highlight_fn_keys(uint8_t led_min, uint8_t led_max) {
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     uint8_t current_layer = get_highest_layer(layer_state);
-    if (current_layer == _WIN_LYR) {
+    if (current_layer == 0) {
         if (rgb_matrix_get_flags() == LED_FLAG_INDICATOR) {
             for (int i = led_min; i < led_max; i++) {
                 rgb_matrix_set_color(i, 0, 0, 0);
@@ -112,7 +112,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 
     if (IS_LAYER_ON(1) ||
         // IS_LAYER_ON(_CTL_LYR) ||  //ignore the CTL layer since we want to see RGB effects on that layer
-        IS_LAYER_ON(3) ||
+        IS_LAYER_ON(2) ||
         IS_LAYER_ON(4) ) {
         // we are in a custom layer, clear all background colors
         // this will make our custom colors stand out more
@@ -124,91 +124,78 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     if (IS_LAYER_ON(1)) {
         // this layer has many functions, so just change the whole color
         for (int i = led_min; i <= led_max; i++) {
-            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0xC0, 0x3D, 0x00);
+            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0, 0, 0);
+        }
+
+        const uint8_t led_indexes[13] = {
+            20,19,18,17,16,15,14,13,12,11,10,9,8
+        };
+        for (int i = 0; i < 13; i++) {
+            RGB_MATRIX_INDICATOR_SET_COLOR(led_indexes[i], 0x00, 0x80, 0x80);
+        }        
+        
+        const uint8_t led_indexesrgb[15] = {
+            41,40,39,38,37,36,
+            58,59,60,
+            67,66,
+            2,3,4,63
+        };
+        for (int i = 0; i < 15; i++) {
+            RGB_MATRIX_INDICATOR_SET_COLOR(led_indexesrgb[i], 0, 0, 255);
         }
 
         // no matter what, this layer also uses fn keys
-        highlight_fn_keys(led_min, led_max);
+        // highlight_fn_keys(led_min, led_max);
 
         // highlight right shift as moving to ctl layer
-        RGB_MATRIX_INDICATOR_SET_COLOR(64, 0, 255, 255);
+        RGB_MATRIX_INDICATOR_SET_COLOR(64, 0xFF, 0x00, 0x00);
     }
 
     if (IS_LAYER_ON(2)) {
-        const uint8_t led_indexes[4] = {
-            5, // use PgDn as indicator
-            39, // P for persistent color
-            69,  // N for NKRO
-            76   // lctl for Fn toggle
-        };
-        for (int i = 0; i < 4; i++) {
-            RGB_MATRIX_INDICATOR_SET_COLOR(led_indexes[i], 0x00, 0x80, 0x80);
+
+        for (int i = led_min; i <= led_max; i++) {
+            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0, 0, 0);
         }
 
-        // turn off some of the LEDS to make it easier to see our indicators
-        const uint8_t led_off_indexes[16] = {
-            51, 7, 6,     // A, Home, PgUp
-            2, 3, 4, 63, // Arrow keys
-            49, 50, 75,  76, 77,  // TAB, CAPS, LSFT, LC, WIN
-            78,  79, 0, 1  // LALT, SPC, RALT, Fn
-        };
-        for (int i = 0; i < 16; i++) {
-            RGB_MATRIX_INDICATOR_SET_COLOR(led_off_indexes[i], 0x00, 0x00, 0x00);
-        }
 
+        // highlight N as NKRO
+        RGB_MATRIX_INDICATOR_SET_COLOR(69, 0xFF, 0x00, 0x00);
+        
+        // highlight T as SnapTap
+        RGB_MATRIX_INDICATOR_SET_COLOR(44, 0xFF, 0xA5, 0x00);
+        
         // highlight Q as reset
-        RGB_MATRIX_INDICATOR_SET_COLOR(48, 0xFF, 0x00, 0x00);
+        RGB_MATRIX_INDICATOR_SET_COLOR(48, 0xFF, 0xFF, 0x00);
 
         // highlight Z as clear eeprom
         RGB_MATRIX_INDICATOR_SET_COLOR(74, 0x7A, 0x00, 0xFF);
-    }
 
-    if (IS_LAYER_ON(3)) {
-        const uint8_t led_indexes[13] = {
-            6, // use PgUp as indicator
-
-            // Light up the numpad to make it easier to see
-            // 6 is used as numlock and starts the numpad
-            23, 24, 25, 26, 27, 28, 29, // 6, 7, 8, 9, Asterisk, minus, equals
-            30, 31, 32, 33,             // U, I, O, P = 4, 5, 6, Plus
-            34            // J, K, L, ; = 1, 2, 3, Enter
-            // M, ,, ., / = 0, dot, dot, slash
-        };
-
-        for (int i = 0; i < 13; i++) {
-            RGB_MATRIX_INDICATOR_SET_COLOR(led_indexes[i], 0, 255, 0);
-        }
+        // highlight S as SignalRGB
+        RGB_MATRIX_INDICATOR_SET_COLOR(52, 0x00, 0xFF, 0x00);
+        
+        // highlight O as OpenRGB
+        RGB_MATRIX_INDICATOR_SET_COLOR(40, 0x00, 0xFF, 0xFF);
     }
 
     if (IS_LAYER_ON(4)) {
-        // this layer has many functions, so just change the whole color
+
         for (int i = led_min; i <= led_max; i++) {
-            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0x00, 0x00, 0xFF);
+            RGB_MATRIX_INDICATOR_SET_COLOR(i, 0, 0, 0);
         }
 
-        RGB_MATRIX_INDICATOR_SET_COLOR(44, 0xFF, 0x00, 0x00); // SOCD Toggle
-
-        RGB_MATRIX_INDICATOR_SET_COLOR(69, 0xFF, 0x00, 0x00); // NKRO Toggle
-    }
-
-    if (IS_LAYER_ON(6)) {
-        // highlight the toggle buttons
-        RGB_MATRIX_INDICATOR_SET_COLOR(7, 0, 0, 255);   // NAV = Home
-        RGB_MATRIX_INDICATOR_SET_COLOR(6, 0, 255, 0);   // NUM = PgUp
-        RGB_MATRIX_INDICATOR_SET_COLOR(5, 0, 255, 255); // CTL = PgDn
-
-        // highlight right shift as moving to ctl layer
-        RGB_MATRIX_INDICATOR_SET_COLOR(64, 0, 255, 255);
-
-        // highlight the aux buttons on right of keyboard
-        const uint8_t led_indexes[7] = {
-            0,                    // highlight the RALT button
-            20, 19, 18, 17, 16, 15 // used for media keys = 6 keys
+        RGB_MATRIX_INDICATOR_SET_COLOR(28, 0xFF, 0x00, 0x00);
+        //numpad
+        const uint8_t led_indexesrgb[16] = {
+            29,30,31,32, 
+            42,41,40,39,
+            57,58,59,60,
+            68,67,66,65
         };
-
-        for (int i = 0; i < 7; i++) {
-            RGB_MATRIX_INDICATOR_SET_COLOR(led_indexes[i], 128, 128, 128);
+        for (int i = 0; i < 16; i++) {
+            RGB_MATRIX_INDICATOR_SET_COLOR(led_indexesrgb[i], 0x00, 0xFF, 0x00);
         }
+
+        RGB_MATRIX_INDICATOR_SET_COLOR(20, 0x7A, 0x00, 0xFF);
     }
 
     process_indicator_queue(led_min, led_max);

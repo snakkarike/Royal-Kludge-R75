@@ -52,3 +52,13 @@ void housekeeping_task_kb(void) {
         gpio_write_pin_high(LED_WIN_LOCK_PIN); // Turn off Win Lock LED
     }
 }
+
+#if !defined(VIA_ENABLE)
+void raw_hid_receive(uint8_t *data, uint8_t length) {
+    switch (data[0]) {
+        case RAW_HID_CMD:
+            via_command_kb(data, length);
+            break;
+    }
+}
+#endif
