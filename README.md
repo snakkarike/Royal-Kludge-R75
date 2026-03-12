@@ -83,6 +83,13 @@ To use VIA, you may need to manually load the JSON layout file:
     `%userprofile%/Documents/WhirlwindFX/Plugins`
 2.  Restart SignalRGB.
 
+### 4️⃣ OpenRGB Setup
+1.  Open **OpenRGB**.
+2.  Ensure your keyboard is detected.
+3.  Configure the settings as shown below:
+    
+![OpenRGB Settings](assets/OpenRGB%20Setting.png)
+
 ---
 
 ## 🏗️ Compiling from Source
