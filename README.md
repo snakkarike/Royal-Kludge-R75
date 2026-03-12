@@ -94,7 +94,12 @@ To use VIA, you may need to manually load the JSON layout file:
 
 ## 🏗️ Compiling from Source
 
-If you wish to build the firmware yourself, use the following QMK command:
+To build the firmware yourself, you will need to clone the appropriate QMK firmware repository:
+
+- **For OpenRGB & SignalRGB Support**: Use the [OpenSignalRGB-2026 Branch](https://github.com/snakkarike/qmk_firmware/tree/OpenSignalRGB-2026).
+- **For Traditional QMK**: Use the [Official QMK Firmware](https://github.com/qmk/qmk_firmware).
+
+Once your environment is set up, use the following command:
 
 ```shell
 qmk compile -j 0 -kb rk/r75/custom -km via
