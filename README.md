@@ -76,10 +76,10 @@ Use your preferred tool (e.g., QMK Toolbox or `wb32-dfu-updater_cli`) to flash t
 To use VIA, you may need to manually load the JSON layout file:
 1.  Open [VIA](https://usevia.app/).
 2.  Enable the **"Design"** tab in Settings.
-3.  Upload `VIA Layout.json` (or `VIA Layout ISO.json`) from the repository.
+3.  Upload `VIA Layout.json` (or `VIA Layout ISO.json`) from the `layouts/` folder.
 
 ### 3️⃣ SignalRGB Setup
-1.  Copy [`SignalRGB Plugin for RK R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to:
+1.  Copy [`SignalRGB Plugin for RK R75.js`](plugins/SignalRGB%20Plugin%20for%20RK%20R75.js) to:
     `%userprofile%/Documents/WhirlwindFX/Plugins`
 2.  Restart SignalRGB.
 
