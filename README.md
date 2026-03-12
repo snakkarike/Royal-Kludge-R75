@@ -1,119 +1,112 @@
-# RK ROYAL KLUDGE R75 - Custom QMK firmware (WIP)
-Custom QMK Firmware for Royal Kludge R75 Wired ANSI Model.
+# ⌨️ Royal Kludge R75 - Custom QMK Firmware
 
-| Firmware        | Features              | USB ID              |
-|---------------|-----------------------|-----------------------|
-| Original Firmware   | QMK, VIA      | VID:342d PID:e484| 
-| Custom Firmware   | QMK, VIA      | | 
-| VIA Plus OpenRGB Firmware   | QMK, VIA, OpenRGB     |  | 
-| VIA Plus SignalRGB Firmware   | QMK, VIA, SignalRGB     |  | 
-| ⭐ VIA Plus OpenRGB & SignalRGB Firmware   | QMK, VIA, OpenRGB, SignalRGB     |  | 
-| | | |
-| VIA Plus OpenRGB & SignalRGB Firmware-ISO   | QMK, VIA, OpenRGB, SignalRGB     | VID:342d PID:e483| 
+A high-performance, feature-rich custom QMK firmware for the **Royal Kludge R75 (Wired ANSI/ISO)**. This project aims to unlock the full potential of the R75, providing advanced features like SOCD cleaning, OpenRGB/SignalRGB integration, and highly customizable layers.
 
-## ⚠️ Disclaimer
-> [!CAUTION]
-> This is a custom firmware that could break your keyboard.
->
-> 🛑 **Use at your own risk!** 🛑
+---
 
-# 🥳Thanks!
-Thanks to [@irfan](https://github.com/irfanjmdn/), [@sdk66](https://github.com/sdk66/) and [@iamdanielv](https://github.com/iamdanielv) for their work on R65.
+## 🚀 Key Features
 
-## ⌨️ New Keymap
+- **QMK & VIA Support**: Full customization through the powerful QMK firmware and easy-to-use VIA interface.
+- **⚡ SOCD Cleaner**: Simultaneous Opposing Cardinal Directions cleaning (Last Win) - essential for competitive gaming (e.g., CS2, Valorant).
+- **🕹️ NKRO (N-Key Rollover)**: Never miss a keystroke with full N-key rollover support.
+- **🌈 Advanced RGB Integration**:
+  - **OpenRGB**: Direct control via OpenRGB for synchronized lighting across all your devices.
+  - **SignalRGB**: Native support for SignalRGB with a dedicated plugin.
+  - Smooth transitions and reactive effects.
+- **🛡️ Safety First**: Triple-tap protection for critical functions like Bootloader reset and EEPROM clearing.
+- **📁 Multi-Layer Support**: Optimized layers for Windows, macOS, and dedicated Numpad functionality.
 
-I've updated the **default** keymap to work with the current source. It can be used as a starting point for customization.
+---
 
-I use `6 layers` for my changes, `keyboard.json` specifies that in the following section:
+## 📦 Firmware Variants
 
-```json
-"dynamic_keymap": {
-    "layer_count": 6
-}
-```
+| Firmware Image | Features | USB IDs (VID:PID) |
+| :--- | :--- | :--- |
+| **Custom Firmware** | QMK, VIA | `342d:e484` |
+| **VIA + OpenRGB** | QMK, VIA, OpenRGB | `342d:e484` |
+| **VIA + SignalRGB** | QMK, VIA, SignalRGB | `342d:e484` |
+| **⭐ VIA + OpenRGB + SignalRGB** | All Features (The Recommended Choice) | `342d:e484` |
+| **VIA + All-in-One (ISO)** | All Features for ISO Layout | `342d:e483` |
 
-## 🖥️ Compiling
+---
 
-You can now use QMK builder with the following command:
+## 🛠️ Usage Guide
+
+### 📂 Layer System Overview
+
+The firmware uses a 6-layer system for maximum flexibility:
+
+1.  **Layer 0 (Base)**: Default Windows layout.
+2.  **Layer 1 (Fn)**: Multimedia, lighting controls, and navigation.
+3.  **Layer 2 (Options)**: System configurations (Reset, NKRO, SOCD, Mode Toggle).
+4.  **Layer 3 (Mac)**: Optimized layout for macOS users.
+5.  **Layer 4 (Numpad)**: Integrated Numpad layout on the alpha keys.
+
+### ⌨️ Key Combinations
+
+#### ⚙️ System Controls (Layer 2)
+*Access by holding `Fn` + `Right Shift`*
+
+| Action | Shortcut |
+| :--- | :--- |
+| **Enter Bootloader** | `Triple Tap Q` |
+| **Clear EEPROM** | `Triple Tap Z` |
+| **Toggle NKRO** | `N` |
+| **Toggle SOCD** | `T` |
+| **Toggle OpenRGB** | `O` |
+| **Toggle SignalRGB** | `S` |
+| **Switch to Layer 0** | `1` |
+| **Switch to Layer 3 (Mac)** | `3` |
+| **Switch to Layer 4 (Numpad)** | `4` |
+
+#### 💡 RGB Modes (Layer 2)
+If using the All-in-One firmware:
+- Toggle **OpenRGB**: `Fn` + `Right Shift` + `O`
+- Toggle **SignalRGB**: `Fn` + `Right Shift` + `S`
+- *Note: If both are off, the keyboard reverts to standard QMK RGB effects.*
+
+---
+
+## 📥 Installation
+
+### 1️⃣ Flashing the Firmware
+Use your preferred tool (e.g., QMK Toolbox or `wb32-dfu-updater_cli`) to flash the `.hex` file corresponding to your desired configuration.
+
+### 2️⃣ VIA Configuration
+To use VIA, you may need to manually load the JSON layout file:
+1.  Open [VIA](https://usevia.app/).
+2.  Enable the **"Design"** tab in Settings.
+3.  Upload `VIA Layout.json` (or `VIA Layout ISO.json`) from the repository.
+
+### 3️⃣ SignalRGB Setup
+1.  Copy [`SignalRGB Plugin for RK R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to:
+    `%userprofile%/Documents/WhirlwindFX/Plugins`
+2.  Restart SignalRGB.
+
+---
+
+## 🏗️ Compiling from Source
+
+If you wish to build the firmware yourself, use the following QMK command:
 
 ```shell
 qmk compile -j 0 -kb rk/r75/custom -km via
 ```
+*The `-j 0` flag enables parallel building for faster results.*
 
-> the `-j 0` uses parallel build to speed it up a bit
+---
 
-qmk should generate a new bin file: `rk_r75_custom_custom.hex` in your qmk_firmware folder.
-
-## 🌐 Using via
-
-In order to use via, you may have to upload the [json specification](Custom%20VIA%20Layout.json), it can be found under the `extras` folder.
-
-## 🥾 Bootloader and Clearing eeprom
-
-To prevent accidental KB Bootloader triggers, I have it hidden under a layer.
-
-- To reboot and `enter bootloader mode`:
-  - hold `Fn`, then hold `RShift`, then triple tap the `q` key
-- To `clear eeprom`:
-  - hold `Fn`, then hold `RShift`, then triple tap the `z` key
-
-## ⭐ Features
-
-To use the features i use `Layer 1`
-- hold `Fn`
-
-While on `Layer 1`, you have the following available:
-
-- `Right Alt` + `Q` - triple tap `Q` to `enter bootloader mode`
-- `Right Alt` + `Z` - triple tap `Z` to `clear eeprom`
-
-- `N` - Toggle NKRO
-- `Right Shift` + `T` - Toggle SOCD
-- `Right Shift` + `F3` - Toggle Numpad Layer
-- `Right Shift` + `F1,F2,F3,F4,F5,F6,F7,F8` - Toggle Layers 0,2,3,4,5,6,7,8
-
-
-## ⭐ VIA + OpenRGB
-To use the features i use `Layer 1`
-- hold `Fn`
-
-While on `Layer 1`, you have the following available:
-
--  `Q` - tap once to switch to VIA mode or switch back to OpenRGB mode.
-
-
-## ⭐ VIA + SignalRGB
-
--  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
-
-
-## ⭐ VIA + SignalRGB + OpenRGB
-
-To use the features i use `Layer 1`
-- hold `Fn`
-
-While on `Layer 1`, you have the following available:
-
-- `Right Shift` + `O` - Toggle OpenRGB
-- `Right Shift` + `S` - Toggle SignalRGB
-
-- `Right Shift` + `Q` - triple tap `Q` to `enter bootloader mode`
-- `Right Shift` + `Z` - triple tap `Z` to `clear eeprom`
-- `Right Shift` + `<>` - triple tap `<>` to `clear eeprom` FOR ISO LAYOUT
-
-- `Right Shift` + `N` - Toggle NKRO
-- `Right Shift` + `T` - Toggle SOCD
-
--  After flashing the firmware, copy [`SignalRGB-Plugin-for-RK-R75.js`](SignalRGB%20Plugin%20for%20RK%20R75.js) to `%userprofile%/Documents/WhirlwindFX/plugins`.
-
-## Note
+## ⚠️ Disclaimer
 > [!CAUTION]
-> To check in which mode the keyboard is currently in.
->
-> Open [VIA](https://usevia.app/)  and try to connect the keyboard.
-> In the settings tab enable show diagnostic information.
-> If the VIA Firmware Protocol Version Mention
+> This is a custom firmware. While extensively tested, there is always a risk of bricking your device. Use at your own risk.
 
-- `12` It is in VIA Mode
-- `2816` It is in OpenRGB Mode
-- `Failed to connect` It is in SignalRGB Mode
+---
+
+## 🤝 Credits & Thanks
+Huge thanks to the original contributors whose work paved the way for this project:
+- [@irfanjmdn](https://github.com/irfanjmdn/)
+- [@sdk66](https://github.com/sdk66/)
+- [@iamdanielv](https://github.com/iamdanielv)
+
+---
+*Maintained with ❤️ for the mechanical keyboard community.*
