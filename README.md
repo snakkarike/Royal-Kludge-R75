@@ -20,13 +20,13 @@ A high-performance, feature-rich custom QMK firmware for the **Royal Kludge R75 
 
 ## 📦 Firmware Variants
 
-| Firmware Image | Features | USB IDs (VID:PID) |
-| :--- | :--- | :--- |
-| **Custom Firmware** | QMK, VIA | `342d:e484` |
-| **VIA + OpenRGB** | QMK, VIA, OpenRGB | `342d:e484` |
-| **VIA + SignalRGB** | QMK, VIA, SignalRGB | `342d:e484` |
-| **⭐ VIA + OpenRGB + SignalRGB** | All Features (The Recommended Choice) | `342d:e484` |
-| **VIA + All-in-One (ISO)** | All Features for ISO Layout | `342d:e483` |
+| Firmware Image | Features | USB IDs (VID:PID) | Status |
+| :--- | :--- | :--- | :--- |
+| **Custom Firmware** | QMK, VIA | `342d:e484` | ❌ Not Maintained |
+| **VIA + OpenRGB** | QMK, VIA, OpenRGB | `342d:e484` | ❌ Not Maintained |
+| **VIA + SignalRGB** | QMK, VIA, SignalRGB | `342d:e484` | ❌ Not Maintained |
+| **⭐ VIA + OpenRGB + SignalRGB** | All Features (The Recommended Choice) | `342d:e484` | ✔️ Maintained |
+| **VIA + All-in-One (ISO)** | All Features for ISO Layout | `342d:e483` | ❌ Not Maintained |
 
 ---
 
