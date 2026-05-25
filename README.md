@@ -26,7 +26,7 @@ A high-performance, feature-rich custom QMK firmware for the **Royal Kludge R75 
 | **VIA + OpenRGB** | QMK, VIA, OpenRGB | `342d:e484` | ❌ Not Maintained |
 | **VIA + SignalRGB** | QMK, VIA, SignalRGB | `342d:e484` | ❌ Not Maintained |
 | **⭐ VIA + OpenRGB + SignalRGB** | All Features (The Recommended Choice) | `342d:e484` | ✔️ Maintained |
-| **VIA + All-in-One (ISO)** | All Features for ISO Layout | `342d:e483` | ❌ Not Maintained |
+| **VIA + All-in-One (ISO)** | All Features for ISO Layout | `342d:e483` | ✔️ Maintained |
 
 ---
 
