@@ -119,10 +119,10 @@ Huge thanks to the original contributors whose work paved the way for this proje
 - [@iamdanielv](https://github.com/iamdanielv)
 
 ---
-*Maintained with ❤️ for the mechanical keyboard community.*
 
-<div align="center">
-  <i>Built to make the design-to-code loop a two-way street.</i>
+
+<div>
+  <i>*Maintained with ❤️ for the mechanical keyboard community.*</i>
   <br/><br/>
   <a href="https://buymeacoffee.com/snakkarike" target="_blank">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 145px !important;" >
