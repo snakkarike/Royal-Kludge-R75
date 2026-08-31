@@ -1,5 +1,13 @@
 # ⌨️ Royal Kludge R75 - Custom QMK Firmware
 
+<p>
+  <a href="https://github.com/snakkarike/Royal-Kludge-R75/stargazers"><img src="https://img.shields.io/github/stars/snakkarike/Royal-Kludge-R75?style=for-the-badge&color=yellow" alt="Stars" /></a>
+  <a href="https://github.com/snakkarike/Royal-Kludge-R75/network/members"><img src="https://img.shields.io/github/forks/snakkarike/Royal-Kludge-R75?style=for-the-badge&color=orange" alt="Forks" /></a>
+  <a href="https://github.com/snakkarike/Royal-Kludge-R75/issues"><img src="https://img.shields.io/github/issues/snakkarike/Royal-Kludge-R75?style=for-the-badge&color=red" alt="Issues" /></a>
+  <a href="https://github.com/snakkarike/Royal-Kludge-R75"><img src="https://img.shields.io/github/repo-size/snakkarike/Royal-Kludge-R75?style=for-the-badge&color=purple" alt="Repo Size" /></a>
+  <a href="https://github.com/snakkarike/Royal-Kludge-R75"><img src="https://img.shields.io/github/languages/top/snakkarike/Royal-Kludge-R75?style=for-the-badge&color=teal" alt="Language" /></a>
+</p>
+
 A high-performance, feature-rich custom QMK firmware for the **Royal Kludge R75 (Wired ANSI/ISO)**. This project aims to unlock the full potential of the R75, providing advanced features like SOCD cleaning, OpenRGB/SignalRGB integration, and highly customizable layers.
 
 ---
